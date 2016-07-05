@@ -8,9 +8,7 @@ module.exports = function(app) {
   });
   app.post('/upload', function(req, res) {
     //response.end("upload complete");
-    console.log(req.files.image.originalFilename);
-    console.log(req.files.image.path);
-    //console.log(req.files);
+    console.log(req.body);
     res.json({
       'response': "Saved"
     });
